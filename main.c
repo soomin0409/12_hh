@@ -4,9 +4,7 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char src[]="the worst things to eat before you sleep";
-	char dst[100];
-	strcpy(dst,src);
-	printf("copiesd string :%s",dst);
+	char str[30]= "happy c programming";
+	printf(" %s  : %i ", str, strlen(str));
 	return 0;
 }
