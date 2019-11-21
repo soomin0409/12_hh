@@ -4,7 +4,20 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char str[30]= "happy c programming";
-	printf(" %s  : %i ", str, strlen(str));
-	return 0;
+	int i;
+	char input[100];
+	FILE *fp;
+	
+	fp=fopen("sample.txt","w");
+	for (i=0;i<3;i++){
+		printf("input: ");
+		scanf("%s",input);
+		fprintf(fp,"%s\n",input);
+		
+	}
+	
+	
+	fclose(fp);
+	
+return 0; 
 }
